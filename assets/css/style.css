@@ -1,29 +1,34 @@
-body {
-	background: #eee url("../images/wov.png") repeat fixed center;
-	font-family:'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-	color: #4aaaa5;
-}
-
-header {
-	background-color: white;
+.a-header {
 	height: 100px;
-	border-bottom: solid 2px #cccccc;
+	background: #dedede;
+	padding: 0;
 }
 
-h1, h2, .name{
-	font-family: 'Georgia', Times, Times New Roman, serif;
-	font-weight: bold;
+.a-brand {
+	background: #333;
+	height: 100px;
+}
+
+.a-nav>li>a {
+	font-size: 1.5em;
+	padding: 0 15px;
+	margin-top: 40px;
+	color: #333;
+}
+
+.a-nav>li>a:hover {
+	background: #dedede;
+}
+
+.a-nav>li>a:active {
+	background: #dedede;
 }
 
 .name {
-	font-size: 2em;
-	background-color: #4aaaa5;
+	float: right;
+	margin:0;
 }
 
-.name:default {
-	color: white;
-}
-
-.name:visited {
-	color: white;
+.name>h1 {
+	color: #eee;
 }
