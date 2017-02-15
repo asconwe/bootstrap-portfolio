@@ -25,10 +25,12 @@ p {
 .a-brand {
 	background: #333;
 	height: 100px;
+	z-index: 100;
 }
 
 .a-nav {
 	margin-top: 30px;
+	z-index: 1;
 }
 
 .a-nav>div>a {
@@ -50,33 +52,15 @@ p {
 	text-decoration: none;
 }
 
-.a-nav>div>a:visited {
+.a-nav>div>a:focus {
 	text-decoration: none;
 }
 
-@media (max-width: 767px) {
-	.a-nav>div>a {
-		color: #dedede;
-		font-family: "Nunito Sans", sans-serif;
-		font-weight: 200;
-	}
-
-	.a-nav>div>a:hover {
-		color: #eee;
-		background: #282828;
-		text-decoration: none;
-	}
-
-	.a-nav>div>a:active {
-		color: #f8f8f8;
-		background: #282828;
-		text-decoration: none;
-	}
-
-	.a-nav>div>a:visited {
-		text-decoration: none;
-	}
+.a-nav>div>a:visited {
+	text-decoration: none;
+	color: #444;
 }
+
 
 .side {
 	/*width: 30%;*/
@@ -89,10 +73,6 @@ p {
 	margin:0;
 	font-family: "Nunito Sans", sans-serif;
 	border-bottom: solid 1px #eee;
-}
-
-.disappearing {
-	display: none;
 }
 
 .name>h1 {
@@ -118,10 +98,15 @@ h2 {
 .profile {
 	margin-right: 20px;
 	margin-bottom: 0;
+	width: 300px;
 }
 
 .padding {
 	padding-top: 40px;
+}
+
+.portfolio-image {
+	padding-bottom: 25px;
 }
 
 .connect, .panel-heading.connect {
@@ -140,4 +125,44 @@ h2 {
 .copyright {
 	color: #333;
 	margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+	.a-nav>div>a {
+		color: #dedede;
+		font-family: "Nunito Sans", sans-serif;
+		font-weight: 200;
+	}
+
+	.a-nav>div>a:hover {
+		color: #eee;
+		background: none;
+		text-decoration: none;
+	}
+
+	.a-nav>div>a:active {
+		color: #f8f8f8;
+		background: none;
+		text-decoration: none;
+	}
+
+	.a-nav>div>a:focus {
+		text-decoration: none;
+	}
+
+	.a-nav>div>a:visited {
+		text-decoration: none;
+		color: #ccc;
+	}
+
+
+	.disappearing {
+		display: none;
+	}
+}
+
+@media (max-width: 480px) {
+	.profile {
+		width: 100%;
+	}
 }
