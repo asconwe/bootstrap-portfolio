@@ -1,7 +1,23 @@
+body {
+	background: #282828;
+}
+
+p {
+	font-size: 1.5em;
+}
+
 .a-header {
-	height: 100px;
+	height: 90px;
 	background: #dedede;
 	padding: 0;
+	border-bottom: solid 1px #333
+}
+
+.a-footer {
+	height: 60px;
+	background: #dedede;
+	padding: 0;
+	border-top: solid 1px #555
 }
 
 .a-brand {
@@ -10,25 +26,44 @@
 }
 
 .a-nav>li>a {
-	font-size: 1.5em;
-	padding: 0 15px;
-	margin-top: 40px;
+	line-height: 30px;
+	font-size: 1.7em;
+	padding: 30px 15px 30px 10px;
+	margin: 0;
 	color: #333;
 }
 
 .a-nav>li>a:hover {
-	background: #dedede;
+	background: #eee;
 }
 
 .a-nav>li>a:active {
-	background: #dedede;
+	background: #f8f8f8;
 }
 
 .name {
 	float: right;
 	margin:0;
+	font-family: "Nunito Sans", sans-serif;
+	border-bottom: solid 1px #eee;
+}
+
+.name>h1 {
+	text-transform: uppercase;
+	margin-top: 15px;
+	font-weight: 200;
 }
 
 .name>h1 {
 	color: #eee;
+}
+
+.content, h2 {
+	color:#eee;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+}
+
+h2 {
+
 }
