@@ -27,20 +27,61 @@ p {
 	height: 100px;
 }
 
-.a-nav>li>a {
+.a-nav {
+	margin-top: 30px;
+}
+
+.a-nav>div>a {
 	line-height: 30px;
 	font-size: 1.7em;
 	padding: 30px 15px 30px 10px;
 	margin: 0;
 	color: #333;
+	/*background: #dedede;*/
 }
 
-.a-nav>li>a:hover {
+.a-nav>div>a:hover {
 	background: #eee;
+	text-decoration: none;
 }
 
-.a-nav>li>a:active {
+.a-nav>div>a:active {
 	background: #f8f8f8;
+	text-decoration: none;
+}
+
+.a-nav>div>a:visited {
+	text-decoration: none;
+}
+
+@media (max-width: 767px) {
+	.a-nav>div>a {
+		color: #dedede;
+		font-family: "Nunito Sans", sans-serif;
+		font-weight: 200;
+	}
+
+	.a-nav>div>a:hover {
+		color: #eee;
+		background: #282828;
+		text-decoration: none;
+	}
+
+	.a-nav>div>a:active {
+		color: #f8f8f8;
+		background: #282828;
+		text-decoration: none;
+	}
+
+	.a-nav>div>a:visited {
+		text-decoration: none;
+	}
+}
+
+.side {
+	/*width: 30%;*/
+	float: left;
+	display: inline;
 }
 
 .name {
@@ -50,9 +91,14 @@ p {
 	border-bottom: solid 1px #eee;
 }
 
+.disappearing {
+	display: none;
+}
+
 .name>h1 {
 	text-transform: uppercase;
-	margin-top: 15px;
+	margin-top: 0px;
+	padding-bottom: 5px;
 	font-weight: 200;
 }
 
