@@ -1,9 +1,11 @@
 body {
 	background: #282828;
+	padding-bottom: 80px;
 }
 
 p {
-	font-size: 1.5em;
+	font-size: 1.3em;
+	text-align: justify;
 }
 
 .a-header {
@@ -61,9 +63,35 @@ p {
 .content, h2 {
 	color:#eee;
 	font-family: "Nunito Sans", sans-serif;
-	font-weight: 200;
 }
 
 h2 {
+	font-weight: 200;
+}
 
+.profile {
+	margin-right: 20px;
+	margin-bottom: 0;
+}
+
+.padding {
+	padding-top: 40px;
+}
+
+.connect, .panel-heading.connect {
+	color: #eee;
+	background: #282828;
+}
+
+.connect>.panel-title {
+	font-size: 2em;
+}
+
+.connect>a {
+	margin-right: 5%;
+}
+
+.copyright {
+	color: #333;
+	margin-top: 20px;
 }
